@@ -32,6 +32,4 @@ npm run preview   # prévisualisation du build
 Le workflow GitHub Actions (`.github/workflows/deploy.yml`) déploie automatiquement
 le contenu du dossier `dist/` sur GitHub Pages à chaque push sur `main`.
 
-## Licence
 
-[MIT](LICENSE)
