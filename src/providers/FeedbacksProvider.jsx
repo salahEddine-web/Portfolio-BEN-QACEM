@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author BEN QACEM Salah Eddine
  * @date 2025-05-10
  * @description This provider is responsible for managing feedbacks, modals and UI interactions.
  */

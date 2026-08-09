@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author BEN QACEM Salah Eddine
  * @description Use this script to wipe all existing resume data and start fresh with a blank resume.
  *
  * @usage
@@ -238,3 +238,4 @@ jsonUtils.update(jProfilePath, {
 })
 
 logger.log(logger.LogTypes.SUCCESS_FINISHED, "Successfully cleared resume data!")
+

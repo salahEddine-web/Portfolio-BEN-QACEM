@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author BEN QACEM Salah Eddine
  * @date 2025-05-10
  * @description This file contains a collection of utility functions that can be used throughout the application.
  */

@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author BEN QACEM Salah Eddine
  * @description Handy utilities to present console messages within your npm scripts.
  */
 export const useNpmLogger = () => {

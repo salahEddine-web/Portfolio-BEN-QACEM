@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author BEN QACEM Salah Eddine
  * @date 2025-05-10
  * @description This hook provides methods to parse and validate data loaded from JSON files.
  */
