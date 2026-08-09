@@ -1,0 +1,53 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Awards",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Achievements}}"
+            },
+            "fr": {
+                "title_short": "Réalis",
+                "title_short_nav": "Réalisations",
+                "title_long_prefix": "Voici",
+                "title_long": "Mes {{Réalisations}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {
+                "en": {"title": "Certifications"},
+                "fr": {"title": "Certifications"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "#1E293B", "fill": "#FFFFFF"},
+                    "date": {"year": 2026, "month": 6},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{OFPPT}}",
+                            "text": "Digital Development Diploma – Web Full-Stack option"
+                        },
+                        "fr": {
+                            "title": "{{OFPPT}}",
+                            "text": "Diplôme en Développement Digital – option Web Full-Stack"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

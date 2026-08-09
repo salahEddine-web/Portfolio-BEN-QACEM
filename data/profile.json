@@ -1,0 +1,37 @@
+{
+    "name": "BEN QACEM SALAH EDDINE",
+
+    "profilePictureUrl": "images/pictures/profileS.jpg",
+    "resumePdfUrl": "",
+
+    "statusCircleVisible": true,
+    "statusCircleVariant": "available",
+    "statusCircleHoverMessage": "status_message_available_for_freelance",
+
+    "locales": {
+        "en": {
+            "localized_name": "Ben Qacem Salah Eddine",
+            "localized_name_stylized": "[[Ben Qacem {{Salah Eddine}}]]",
+            "status_message_available_for_freelance": "Available for freelance!",
+            "roles": [
+                "Full-Stack Developer",
+                "Web Developer",
+                "App Developer"
+            ],
+            "name_pronunciation_ipa": "",
+            "name_pronunciation_audio_url": ""
+        },
+        "fr": {
+            "localized_name": "Ben Qacem Salah Eddine",
+            "localized_name_stylized": "[[Ben Qacem {{Salah Eddine}}]]",
+            "status_message_available_for_freelance": "Disponible pour freelance !",
+            "roles": [
+                "Développeur Full-Stack",
+                "Développeur web",
+                "Développeur d'applications"
+            ],
+            "name_pronunciation_ipa": "",
+            "name_pronunciation_audio_url": ""
+        }
+    }
+}

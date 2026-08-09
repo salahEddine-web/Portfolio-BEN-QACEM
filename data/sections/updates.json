@@ -1,0 +1,178 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Life recently",
+                "title_short_nav": "Updates",
+                "title_long_prefix": "Take a look at my",
+                "title_long": "Recent {{Updates}}"
+            },
+            "fr": {
+                "title_short": "Vie Récente",
+                "title_short_nav": "Mises à Jour",
+                "title_long_prefix": "Découvrez mes",
+                "title_long": "Dernières {{Mises à Jour}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleFacts",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": null,
+                    "faIcon": "fa-solid fa-diagram-project",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {"title": "03", "text": "Projects Built"},
+                        "fr": {"title": "03", "text": "Projets Réalisés"}
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": null,
+                    "faIcon": "fa-solid fa-layer-group",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {"title": "10+", "text": "Technologies Used"},
+                        "fr": {"title": "10+", "text": "Technologies Utilisées"}
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": null,
+                    "faIcon": "fa-solid fa-briefcase",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {"title": "01", "text": "Internship at SOREC"},
+                        "fr": {"title": "01", "text": "Stage à SOREC"}
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": null,
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {"title": "2026", "text": "OFPPT Graduate"},
+                        "fr": {"title": "2026", "text": "Diplômé OFPPT"}
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": null,
+                    "faIcon": "fa-solid fa-heart",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {"title": "Infinite", "text": "Passion for Learning"},
+                        "fr": {"title": "Infinie", "text": "Passion d'Apprendre"}
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": {"title": "Quick {{Facts}}"},
+                "fr": {"title": "Fil d'{{Actualités}}"}
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 3,
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2026, "month": 6},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Graduating from {{OFPPT!}}",
+                            "province": "Rabat",
+                            "country": "Morocco",
+                            "institution": "OFPPT",
+                            "text": "I'm completing my Digital Development Diploma with a Web Full-Stack option at OFPPT. After a rewarding internship at SOREC, I'm ready to take on new professional challenges."
+                        },
+                        "fr": {
+                            "title": "Diplômé de l'{{OFPPT!}}",
+                            "province": "Rabat",
+                            "country": "Maroc",
+                            "institution": "OFPPT",
+                            "text": "Je finalise mon diplôme en Développement Digital – option Web Full-Stack à l'OFPPT. Après un stage enrichissant chez SOREC, je suis prêt à relever de nouveaux défis professionnels."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2026, "month": 7},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/salahEddine-web/justice-visitor-management", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Started my {{internship at SOREC!}}",
+                            "province": "Rabat",
+                            "country": "Morocco",
+                            "institution": "SOREC – Royal Horse Encouragement Society",
+                            "text": "I began a full-stack internship at SOREC, working on internal web applications with Angular and REST APIs."
+                        },
+                        "fr": {
+                            "title": "Début de mon {{stage chez SOREC!}}",
+                            "province": "Rabat",
+                            "country": "Maroc",
+                            "institution": "SOREC – Société Royale d'Encouragement du Cheval",
+                            "text": "J'ai commencé un stage full-stack chez SOREC, en travaillant sur des applications web internes avec Angular et les API REST."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2024, "month": 9},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Building the {{Gestion des Visiteurs}} app",
+                            "province": "Rabat",
+                            "country": "Morocco",
+                            "institution": "Ministry of Justice",
+                            "text": "I developed a visitor management application for the Ministry of Justice with Laravel and MySQL, covering visitors, employees and users management."
+                        },
+                        "fr": {
+                            "title": "Développement de l'app {{Gestion des Visiteurs}}",
+                            "province": "Rabat",
+                            "country": "Maroc",
+                            "institution": "Ministère de la Justice",
+                            "text": "J'ai développé une application de gestion des visiteurs pour le Ministère de la Justice avec Laravel et MySQL, couvrant la gestion des visiteurs, des employés et des utilisateurs."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

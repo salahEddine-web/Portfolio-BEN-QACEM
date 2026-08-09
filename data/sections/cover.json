@@ -1,0 +1,86 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Welcome!",
+                "title_short_nav": "About me",
+                "title_long_prefix": "Hello...",
+                "title_long": "I'm {{Ben Qacem!}}"
+            },
+            "fr": {
+                "title_short": "Salut !",
+                "title_short_nav": "À propos",
+                "title_long_prefix": "Salut...",
+                "title_long": "Je suis {{Ben Qacem !}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleInlineList",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "display_as_list_if_width_is_lower_than": 380
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Rabat, Morocco",
+                    "link": {"href": "", "tooltipString": ""},
+                    "faIcon": "pi pi-map-marker"
+                },
+                {
+                    "id": 2,
+                    "label": "sorec.salaheddine@gmail.com",
+                    "link": {"href": "mailto:sorec.salaheddine@gmail.com", "tooltipString": "email_me"},
+                    "faIcon": "fa-regular fa-envelope"
+                },
+                {
+                    "id": 3,
+                    "label": "@salahEddine-web",
+                    "link": {"href": "https://github.com/salahEddine-web", "tooltipString": "see_on_github"},
+                    "faIcon": "fa-brands fa-github"
+                },
+                {
+                    "id": 4,
+                    "label": "LinkedIn",
+                    "link": {"href": "https://www.linkedin.com/in/salah-eddine-benqacem-ab0914337/", "tooltipString": "open_website"},
+                    "faIcon": "fa-brands fa-linkedin"
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleText",
+            "locales": {
+                "en": {"title": "{{A little bit}} about me..."},
+                "fr": {"title": "{{Un peu}} à propos de moi..."}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "text": "<p>Full-Stack Developer based in [[Morocco]], currently an [[intern at {{SOREC}}]] where I build internal applications with Laravel and React.</p><p>I design [[performant, accessible and elegant]] user interfaces with TypeScript, React, Next.js and Tailwind CSS, and architect [[robust APIs]] in Node.js and Laravel (PHP) with PostgreSQL and MongoDB.</p><p>Continuously learning: GraphQL, Flutter/Dart, Java Spring Boot. Open to [[open-source collaborations]] and stimulating technical challenges.</p><p><i>\"Code is poetry, elegance is the priority.\"</i></p>"
+                        },
+                        "fr": {
+                            "text": "<p>Développeur {{Full-Stack}} basé au [[Maroc]], actuellement [[stagiaire chez {{SOREC}}]] où je construis des applications internes avec Laravel et React.</p><p>Je conçois des interfaces utilisateur [[performantes, accessibles et élégantes]] avec TypeScript, React, Next.js et Tailwind CSS, et j'architecte des [[APIs robustes]] en Node.js et Laravel (PHP) avec PostgreSQL et MongoDB.</p><p>En apprentissage continu : GraphQL, Flutter/Dart, Java Spring Boot. Ouvert aux [[collaborations open-source]] et aux défis techniques stimulants.</p><p><i>« Le code est poésie, l'élégance est la priorité. »</i></p>"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

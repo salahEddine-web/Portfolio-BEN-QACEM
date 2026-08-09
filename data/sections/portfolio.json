@@ -1,0 +1,128 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Take a look at",
+                "title_long": "My {{Portfolio}}"
+            },
+            "fr": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Découvrez",
+                "title_long": "Mon {{Portfolio}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_apps": "Apps",
+                    "category_web": "Web",
+                    "category_utilities": "Utilities"
+                },
+                "fr": {
+                    "category_all": "Tout",
+                    "category_apps": "Apps",
+                    "category_web": "Web",
+                    "category_utilities": "Utilitaires"
+                }
+            },
+            "settings": {
+                "categorize_by": ["category_apps", "category_web", "category_utilities"],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-building-columns",
+                    "faIconColors": {"bg": "#FF2D20", "fill": "#FFFFFF"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/salahEddine-web/justice-visitor-management", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Gestion des Visiteurs",
+                            "text": "A web application for managing <b>visitors, employees and users</b> for the <b>Ministry of Justice</b>, built with <b>Laravel</b> and <b>MySQL</b>.",
+                            "tags": ["Laravel", "MySQL", "Management"]
+                        },
+                        "fr": {
+                            "title": "Gestion des Visiteurs",
+                            "text": "Application web de gestion des <b>visiteurs, employés et utilisateurs</b> pour le <b>Ministère de la Justice</b>, développée avec <b>Laravel</b> et <b>MySQL</b>.",
+                            "tags": ["Laravel", "MySQL", "Gestion"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "categoryId": "category_web",
+                    "img": "",
+                    "faIcon": "fa-solid fa-window-restore",
+                    "faIconColors": {"bg": "#111111", "fill": "#FFFFFF"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/salahEddine-web/hudoo-Brand", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"},
+                            {"href": "https://hudoo-brand-ben-qacem.vercel.app/", "tooltipString": "open_website", "faIcon": "fa-solid fa-link"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Brand Hudoo",
+                            "text": "A modern and responsive <b>brand showcase website</b> for the <b>HUDOO</b> brand, built with <b>Next.js</b> and <b>Tailwind CSS</b>.",
+                            "tags": ["Next.js", "Tailwind CSS", "Brand"]
+                        },
+                        "fr": {
+                            "title": "Brand Hudoo",
+                            "text": "Un <b>site vitrine</b> moderne et responsive de la marque <b>HUDOO</b>, développé avec <b>Next.js</b> et <b>Tailwind CSS</b>.",
+                            "tags": ["Next.js", "Tailwind CSS", "Marque"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-diagram-project",
+                    "faIconColors": {"bg": "#777BB3", "fill": "#EEEEEE"},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/salahEddine-web/gestion-flux", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Gestion Flux",
+                            "text": "A flow management application built with <b>PHP</b>, allowing users to organize, track and manage their data flows efficiently.",
+                            "tags": ["PHP", "Management", "App"]
+                        },
+                        "fr": {
+                            "title": "Gestion Flux",
+                            "text": "Une application de gestion de flux développée en <b>PHP</b>, permettant aux utilisateurs d'organiser, de suivre et de gérer efficacement leurs flux de données.",
+                            "tags": ["PHP", "Gestion", "Application"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

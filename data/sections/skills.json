@@ -1,0 +1,410 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Skills",
+                "title_short_nav": "Skills",
+                "title_long_prefix": "Explore",
+                "title_long": "My {{Skill Set}}"
+            },
+            "fr": {
+                "title_short": "Capacités",
+                "title_short_nav": "Capacités",
+                "title_long_prefix": "Explorez",
+                "title_long": "Mes {{Compétences}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Full-Stack}} Development",
+                            "text": "Building complete web applications from frontend to backend."
+                        },
+                        "fr": {
+                            "title": "Développement {{Full-Stack}}",
+                            "text": "Création d'applications web complètes, du frontend au backend."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{API}} Development",
+                            "text": "Designing robust RESTful APIs with Node.js and Laravel."
+                        },
+                        "fr": {
+                            "title": "Développement {{API}}",
+                            "text": "Conception d'APIs RESTful robustes avec Node.js et Laravel."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-palette",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{UI/UX}} Design",
+                            "text": "Creating performant, accessible and elegant interfaces."
+                        },
+                        "fr": {
+                            "title": "Design {{UI/UX}}",
+                            "text": "Création d'interfaces performantes, accessibles et élégantes."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-people-group",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Open-Source}} Contributions",
+                            "text": "Sharing knowledge and collaborating on open-source projects."
+                        },
+                        "fr": {
+                            "title": "Contributions {{Open-Source}}",
+                            "text": "Partage de connaissances et collaboration sur des projets open-source."
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Backend Stack"},
+                "fr": {"title": "Stack Backend"}
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-php",
+                    "faIconColors": {"bg": "", "fill": "#FFD700", "fillLight": "#4F5B93"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 95,
+                    "locales": {
+                        "en": {"title": "PHP / Laravel", "text": "Architecting robust applications and RESTful APIs with Laravel.", "level": ""},
+                        "fr": {"text": "Architecture d'applications robustes et d'APIs RESTful avec Laravel."}
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-brands fa-node-js",
+                    "faIconColors": {"bg": "", "fill": "#339933"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 90,
+                    "locales": {
+                        "en": {"title": "Node.js", "text": "Building efficient and scalable backend services.", "level": ""},
+                        "fr": {"text": "Développement de services backend efficaces et évolutifs."}
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-brands fa-git",
+                    "faIconColors": {"bg": "", "fill": "#F05032"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 90,
+                    "locales": {
+                        "en": {"title": "Git", "text": "Version control and collaboration workflows.", "level": ""},
+                        "fr": {"text": "Contrôle de version et workflows de collaboration."}
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {"bg": "", "fill": "#4479A1"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 85,
+                    "locales": {
+                        "en": {"title": "MySQL", "text": "Designing and optimizing relational databases.", "level": ""},
+                        "fr": {"text": "Conception et optimisation de bases de données relationnelles."}
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {"bg": "", "fill": "#4169E1"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 80,
+                    "locales": {
+                        "en": {"title": "PostgreSQL", "text": "Building reliable data models for production systems.", "level": ""},
+                        "fr": {"text": "Construction de modèles de données fiables pour les systèmes en production."}
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "fa-solid fa-server",
+                    "faIconColors": {"bg": "", "fill": "#47A248"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 75,
+                    "locales": {
+                        "en": {"title": "MongoDB", "text": "Working with NoSQL document databases.", "level": ""},
+                        "fr": {"text": "Travail avec les bases de données NoSQL orientées documents."}
+                    }
+                },
+                {
+                    "id": 7,
+                    "img": "",
+                    "faIcon": "fa-brands fa-java",
+                    "faIconColors": {"bg": "", "fill": "#007396", "fillLight": "#5382A1"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 70,
+                    "locales": {
+                        "en": {"title": "Java", "text": "Building applications with Java and Spring Boot.", "level": ""},
+                        "fr": {"text": "Développement d'applications avec Java et Spring Boot."}
+                    }
+                },
+                {
+                    "id": 8,
+                    "img": "",
+                    "faIcon": "fa-solid fa-leaf",
+                    "faIconColors": {"bg": "", "fill": "#6DB33F"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 65,
+                    "locales": {
+                        "en": {"title": "Spring Boot", "text": "Creating REST APIs and microservices with Spring.", "level": ""},
+                        "fr": {"text": "Création d'APIs REST et de microservices avec Spring."}
+                    }
+                },
+                {
+                    "id": 9,
+                    "img": "",
+                    "faIcon": "fa-brands fa-docker",
+                    "faIconColors": {"bg": "", "fill": "#2496ED"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 60,
+                    "locales": {
+                        "en": {"title": "Docker", "text": "Containerizing applications for consistent environments.", "level": ""},
+                        "fr": {"text": "Conteneurisation d'applications pour des environnements cohérents."}
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 3,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Frontend Stack"},
+                "fr": {"title": "Stack Frontend"}
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-brands fa-html5",
+                    "faIconColors": {"bg": "", "fill": "#E34F26"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 100,
+                    "locales": {
+                        "en": {"title": "HTML5", "text": "Building structured and semantic web pages.", "level": ""},
+                        "fr": {"text": "Construction de pages web structurées et sémantiques."}
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-brands fa-js",
+                    "faIconColors": {"bg": "", "fill": "#F7DF1E", "fillLight": "#a69617"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 95,
+                    "locales": {
+                        "en": {"title": "JavaScript", "text": "Building dynamic and interactive web applications.", "level": ""},
+                        "fr": {"text": "Développement d'applications web dynamiques et interactives."}
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-brands fa-react",
+                    "faIconColors": {"bg": "", "fill": "#61DAFB", "fillLight": "#317385"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 95,
+                    "locales": {
+                        "en": {"title": "React", "text": "Building modern component-based user interfaces.", "level": ""},
+                        "fr": {"text": "Construction d'interfaces utilisateur modernes basées sur des composants."}
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "", "fill": "#3178C6"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 90,
+                    "locales": {
+                        "en": {"title": "TypeScript", "text": "Adding type safety to large-scale frontend projects.", "level": ""},
+                        "fr": {"text": "Ajout de la sécurité de typage aux projets frontend à grande échelle."}
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-brands fa-css3-alt",
+                    "faIconColors": {"bg": "", "fill": "#1572B6"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 85,
+                    "locales": {
+                        "en": {"title": "CSS3", "text": "Crafting responsive and visually appealing designs.", "level": ""},
+                        "fr": {"text": "Création de designs responsives et visuellement attrayants."}
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": "",
+                    "faIcon": "fa-solid fa-window-restore",
+                    "faIconColors": {"bg": "", "fill": "#000000", "fillLight": "#9CA3AF"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 85,
+                    "locales": {
+                        "en": {"title": "Next.js", "text": "Building performant full-stack React applications.", "level": ""},
+                        "fr": {"text": "Développement d'applications React full-stack performantes."}
+                    }
+                },
+                {
+                    "id": 7,
+                    "img": "",
+                    "faIcon": "fa-solid fa-wind",
+                    "faIconColors": {"bg": "", "fill": "#06B6D4"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 85,
+                    "locales": {
+                        "en": {"title": "Tailwind CSS", "text": "Designing clean interfaces with utility-first CSS.", "level": ""},
+                        "fr": {"text": "Conception d'interfaces propres avec le CSS utility-first."}
+                    }
+                },
+                {
+                    "id": 8,
+                    "img": "",
+                    "faIcon": "fa-solid fa-rotate",
+                    "faIconColors": {"bg": "", "fill": "#DD0031"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 75,
+                    "locales": {
+                        "en": {"title": "Angular", "text": "Building structured single-page applications.", "level": ""},
+                        "fr": {"text": "Développement d'applications monopage structurées."}
+                    }
+                },
+                {
+                    "id": 9,
+                    "img": "",
+                    "faIcon": "fa-brands fa-vuejs",
+                    "faIconColors": {"bg": "", "fill": "#4FC08D", "fillLight": "#2b825b"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 65,
+                    "locales": {
+                        "en": {"title": "Vue.js", "text": "Building progressive and maintainable interfaces.", "level": ""},
+                        "fr": {"text": "Construction d'interfaces progressives et maintenables."}
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 4,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Languages"},
+                "fr": {"title": "Langues"}
+            },
+            "settings": {
+                "max_items_per_row": 1,
+                "max_rows_collapse_threshold": 4,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": true
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/flags/ar-ma.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "Arabic", "text": "Native speaker.", "level": "Native"},
+                        "fr": {"title": "Arabe", "text": "Locuteur natif.", "level": "Natif"}
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "images/flags/fr.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "French", "text": "Fluent in professional and everyday communication.", "level": "Fluent"},
+                        "fr": {"title": "Français", "text": "Courant dans la communication professionnelle et quotidienne.", "level": "Courant"}
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "images/flags/en-us.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "percentage": null,
+                    "locales": {
+                        "en": {"title": "English", "text": "Professional proficiency for technical and professional communication.", "level": "Professional"},
+                        "fr": {"title": "Anglais", "text": "Maîtrise professionnelle pour la communication technique et professionnelle.", "level": "Maîtrise professionnelle"}
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,144 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Experience",
+                "title_short_nav": "Experience",
+                "title_long_prefix": "Summary of my",
+                "title_long": "{{Work}} Experience"
+            },
+            "fr": {
+                "title_short": "Expérience",
+                "title_short_nav": "Expérience",
+                "title_long_prefix": "Résumé de mon",
+                "title_long": "Parcours {{Professionel}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-building",
+                    "faIconColors": {"bg": "#1E293B", "fill": "#FFFFFF"},
+                    "dateStart": {"year": 2026, "month": 7},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "{{Full-Stack Developer}} Intern",
+                            "province": "Rabat",
+                            "country": "Morocco",
+                            "institution": "SOREC – Royal Horse Encouragement Society",
+                            "text": "Participating in the development and maintenance of internal web applications:",
+                            "list": [
+                                "Designing and improving user interfaces with Angular",
+                                "Integrating and consuming REST APIs",
+                                "Fixing bugs and optimizing features",
+                                "Collaborating with the team to deliver reliable internal tools"
+                            ],
+                            "tags": ["Angular", "REST API", "Full-Stack"]
+                        },
+                        "fr": {
+                            "title": "Stagiaire {{Développeur Full-Stack}}",
+                            "province": "Rabat",
+                            "country": "Maroc",
+                            "institution": "SOREC – Société Royale d'Encouragement du Cheval",
+                            "text": "Participation au développement et à la maintenance d'applications web internes :",
+                            "list": [
+                                "Conception et amélioration d'interfaces utilisateur avec Angular",
+                                "Intégration et consommation d'API REST",
+                                "Correction de bugs et optimisation des fonctionnalités",
+                                "Collaboration avec l'équipe pour livrer des outils internes fiables"
+                            ],
+                            "tags": ["Angular", "API REST", "Full-Stack"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-cart-shopping",
+                    "faIconColors": {"bg": "#1E293B", "fill": "#FFFFFF"},
+                    "dateStart": {"year": 2024, "month": 7},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "Web & {{E-commerce}} Developer",
+                            "province": "",
+                            "country": "",
+                            "institution": "Freelance / Personal projects",
+                            "text": "Design and development of websites and online stores:",
+                            "list": [
+                                "Creating and launching several e-commerce stores on the Ostora platform (products, categories, payment methods)",
+                                "Customizing design and UI to optimize the user experience (UX/UI)",
+                                "Building professional websites with WordPress (themes, plugins, dynamic pages, content integration)"
+                            ],
+                            "tags": ["WordPress", "E-commerce", "UX/UI"]
+                        },
+                        "fr": {
+                            "title": "Développeur Web & {{E-commerce}}",
+                            "province": "",
+                            "country": "",
+                            "institution": "Freelance / Projets personnels",
+                            "text": "Conception et développement de sites web et de boutiques en ligne :",
+                            "list": [
+                                "Création et mise en ligne de plusieurs boutiques e-commerce sur la plateforme Ostora (produits, catégories, moyens de paiement)",
+                                "Personnalisation du design et de l'interface afin d'optimiser l'expérience utilisateur (UX/UI)",
+                                "Conception de sites web professionnels avec WordPress (thèmes, extensions, pages dynamiques, intégration de contenus)"
+                            ],
+                            "tags": ["WordPress", "E-commerce", "UX/UI"]
+                        }
+                    }
+                },
+
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-book-open-reader",
+                    "faIconColors": {"bg": "#1E293B", "fill": "#FFFFFF"},
+                    "dateStart": {"year": 2023, "month": 11},
+                    "dateEnd": {"year": 2024, "month": 4},
+                    "locales": {
+                        "en": {
+                            "title": "{{Librarian}}",
+                            "province": "",
+                            "country": "",
+                            "institution": "La Valle Service",
+                            "text": "As a librarian, I supported users in their information research and use of digital resources:",
+                            "list": [
+                                "Managing catalogs and databases",
+                                "Digitizing documents",
+                                "Assisting users in searching for information"
+                            ],
+                            "tags": ["Documentation", "Digital"]
+                        },
+                        "fr": {
+                            "title": "{{Bibliothécaire}}",
+                            "province": "",
+                            "country": "",
+                            "institution": "La Valle Service",
+                            "text": "Dans le cadre de mon poste de bibliothécaire, j'ai accompagné les usagers dans la recherche d'informations et l'utilisation des ressources numériques :",
+                            "list": [
+                                "Participation à la gestion des catalogues et bases de données",
+                                "Numérisation de documents",
+                                "Accompagnement des usagers dans la recherche d'informations"
+                            ],
+                            "tags": ["Documentation", "Numérique"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
