@@ -4,7 +4,7 @@ Portfolio personnel en React + Vite, disponible en français et en anglais.
 
 ## Aperçu
 
-- **Online** : https://salahEddine-web.github.io/Portfolio-BEN-QACEM/
+- **Online** : https://portfolio-ben-qacem.vercel.app/
 - **Stack** : React 18, Vite, SCSS, swiper, font-awesome
 - **Thèmes** : dark / light
 - **Langues** : Français, Anglais
@@ -29,7 +29,13 @@ npm run preview   # prévisualisation du build
 
 ## Déploiement
 
-Le workflow GitHub Actions (`.github/workflows/deploy.yml`) déploie automatiquement
-le contenu du dossier `dist/` sur GitHub Pages à chaque push sur `main`.
+Déploiement via [Vercel](https://vercel.com) :
+
+```bash
+npm i -g vercel
+vercel --prod
+```
+
+Le projet est ensuite redéployé à chaque push sur `main` si le repo est importé sur Vercel.
 
 
