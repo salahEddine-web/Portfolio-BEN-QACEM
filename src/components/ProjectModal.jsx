@@ -30,7 +30,7 @@ function ProjectModal({ project, onClose }) {
 
         <div className="project-modal__header">
           <span className="project-modal__label">Project Details</span>
-          <h2 className="project-modal__title">{project.locales?.title || project.label}</h2>
+          <h2 className="project-modal__title" dangerouslySetInnerHTML={{ __html: project.locales?.title || project.label }} />
         </div>
 
         {project.img && (

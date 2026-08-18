@@ -37,11 +37,11 @@ function Experience() {
                   )}
                 </div>
 
-                <h3 className="experience__position">{item.locales?.title || item.label}</h3>
+                <h3 className="experience__position" dangerouslySetInnerHTML={{ __html: item.locales?.title || item.label }} />
                 <p className="experience__institution">{item.locales?.institution}</p>
 
                 {item.locales?.text && (
-                  <p className="experience__text">{item.locales.text}</p>
+                  <p className="experience__text" dangerouslySetInnerHTML={{ __html: item.locales.text }} />
                 )}
 
                 {item.locales?.list?.length > 0 && (

@@ -100,7 +100,7 @@ function Contact() {
           {submitted ? (
             <div className="contact__success">
               <i className="fa-solid fa-check-circle" />
-              <h3>{formArticle?.locales?.contactThankYouTitle || 'Thanks for reaching out!'}</h3>
+              <h3 dangerouslySetInnerHTML={{ __html: formArticle?.locales?.contactThankYouTitle || 'Thanks for reaching out!' }} />
               <p>{formArticle?.locales?.contactThankYouBody || "I'll get back to you soon."}</p>
             </div>
           ) : (

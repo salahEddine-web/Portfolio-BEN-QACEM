@@ -35,11 +35,11 @@ function Education() {
                   )}
                 </div>
 
-                <h3 className="education__degree">{item.locales?.title || item.label}</h3>
+                <h3 className="education__degree" dangerouslySetInnerHTML={{ __html: item.locales?.title || item.label }} />
                 <p className="education__institution">{item.locales?.institution}</p>
 
                 {item.locales?.text && (
-                  <p className="education__text">{item.locales.text}</p>
+                  <p className="education__text" dangerouslySetInnerHTML={{ __html: item.locales.text }} />
                 )}
 
                 {item.locales?.list?.length > 0 && (

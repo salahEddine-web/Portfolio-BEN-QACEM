@@ -31,14 +31,14 @@ function Skills() {
         <div className="skills__grid">
           {skillCategories.map((cat, i) => (
             <div key={i} className={`skills__category scroll-reveal stagger-${Math.min(i + 2, 8)}`}>
-              <h3 className="skills__category-title">{cat.title}</h3>
+              <h3 className="skills__category-title" dangerouslySetInnerHTML={{ __html: cat.title }} />
               <div className="skills__items">
                 {cat.items.map((item) => (
                   <div key={item.id} className="skills__item">
                     {item.faIcon && (
                       <i className={`skills__icon ${item.faIcon}`} style={item.faIconStyle} />
                     )}
-                    <span className="skills__name">{item.locales?.title || item.label}</span>
+                    <span className="skills__name" dangerouslySetInnerHTML={{ __html: item.locales?.title || item.label }} />
                   </div>
                 ))}
               </div>

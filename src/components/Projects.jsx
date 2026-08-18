@@ -48,7 +48,7 @@ function Projects() {
                   <span className="projects__number">
                     Project {String(i + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="projects__title">{project.locales?.title || project.label}</h3>
+                  <h3 className="projects__title" dangerouslySetInnerHTML={{ __html: project.locales?.title || project.label }} />
                   <p
                     className="projects__description"
                     dangerouslySetInnerHTML={{ __html: project.locales?.text || '' }}
