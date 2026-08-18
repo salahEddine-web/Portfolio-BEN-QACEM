@@ -1,0 +1,64 @@
+@import "/src/styles/Portfolio.scss";
+
+.footer {
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__brand {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  &__copy {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+
+  &__right {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__inner {
+      flex-direction: column;
+      gap: 1.25rem;
+      text-align: center;
+    }
+
+    &__left {
+      align-items: center;
+    }
+
+    &__right {
+      gap: 1rem;
+    }
+  }
+}

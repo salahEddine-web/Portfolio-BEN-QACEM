@@ -1,51 +1,51 @@
-import React, {useEffect, useState} from 'react'
-import Layout from "/src/components/layout/Layout.jsx"
-import {useData} from "/src/providers/DataProvider.jsx"
-import {useLanguage} from "/src/providers/LanguageProvider.jsx"
-import {useLocation} from "/src/providers/LocationProvider.jsx"
-import {useNavigation} from "/src/providers/NavigationProvider.jsx"
-import LayoutNavigation from "/src/components/layout/LayoutNavigation.jsx"
-import LayoutImageCache from "/src/components/layout/LayoutImageCache.jsx"
-import LayoutSlideshow from "/src/components/layout/LayoutSlideshow.jsx"
+import React, { useEffect } from 'react'
+import { useData } from '/src/providers/DataProvider.jsx'
+import { useLanguage } from '/src/providers/LanguageProvider.jsx'
+import { useScrollRevealInit } from '/src/hooks/useScrollReveal.js'
+import { useActiveSection } from '/src/hooks/useActiveSection.js'
+import Navbar from '/src/components/Navbar.jsx'
+import Hero from '/src/components/Hero.jsx'
+import Marquee from '/src/components/Marquee.jsx'
+import About from '/src/components/About.jsx'
+import Stats from '/src/components/Stats.jsx'
+import Projects from '/src/components/Projects.jsx'
+import Experience from '/src/components/Experience.jsx'
+import Skills from '/src/components/Skills.jsx'
+import Services from '/src/components/Services.jsx'
+import Education from '/src/components/Education.jsx'
+import Learning from '/src/components/Learning.jsx'
+import Contact from '/src/components/Contact.jsx'
+import Footer from '/src/components/Footer.jsx'
+import CustomCursor from '/src/components/CustomCursor.jsx'
+import ScrollProgress from '/src/components/ScrollProgress.jsx'
+
+const SECTION_IDS = ['hero','about','stats','portfolio','experience','skills','services','education','learning','contact']
 
 function Portfolio() {
-    const data = useData()
-    const language = useLanguage()
-    const location = useLocation()
-    const navigation = useNavigation()
+  useScrollRevealInit()
+  const { activeId, scrollTo } = useActiveSection(SECTION_IDS)
 
-    if(!data || !language || !location || !navigation) {
-        window.location.reload()
-        return
-    }
-
-    const profile = data.getProfile()
-    const settings = data.getSettings()
-    const sections = data.getSections()
-
-    const backgroundStyle = settings.templateSettings.backgroundStyle
-
-    const currentSection = navigation.targetSection
-    const previousSection = navigation.previousSection
-    const sectionLinks = navigation.sectionLinks
-    const categoryLinks = navigation.categoryLinks
-
-    return (
-        <Layout id={"react-portfolio"}
-                backgroundStyle={backgroundStyle}>
-            <LayoutImageCache profile={profile}
-                              settings={settings}
-                              sections={sections}/>
-
-            <LayoutNavigation profile={profile}
-                              sectionLinks={sectionLinks}
-                              categoryLinks={categoryLinks}>
-                <LayoutSlideshow sections={sections}
-                                 currentSection={currentSection}
-                                 previousSection={previousSection}/>
-            </LayoutNavigation>
-        </Layout>
-    )
+  return (
+    <div className="portfolio">
+      <ScrollProgress />
+      <CustomCursor />
+      <Navbar activeId={activeId} scrollTo={scrollTo} />
+      <main>
+        <Hero scrollTo={scrollTo} />
+        <Marquee />
+        <About />
+        <Stats />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Services />
+        <Education />
+        <Learning />
+        <Contact />
+      </main>
+      <Footer scrollTo={scrollTo} />
+    </div>
+  )
 }
 
 export default Portfolio

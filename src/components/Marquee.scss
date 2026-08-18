@@ -1,0 +1,42 @@
+@import "/src/styles/Portfolio.scss";
+
+.marquee {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.1rem 0;
+  overflow: hidden;
+  background: var(--bg);
+
+  &__track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-shrink: 0;
+  }
+
+  &__item {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0 0.75rem;
+  }
+
+  &__bullet {
+    color: var(--accent);
+    font-size: 0.5rem;
+  }
+}

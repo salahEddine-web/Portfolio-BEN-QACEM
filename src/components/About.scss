@@ -1,0 +1,102 @@
+@import "/src/styles/Portfolio.scss";
+
+.about {
+  padding: var(--section-padding) 0;
+  background: var(--bg);
+
+  &__header {
+    margin-bottom: 2.5rem;
+  }
+
+  &__statement {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--text);
+    margin-bottom: 3.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  &__bio-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .text-primary {
+      color: var(--accent);
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    i {
+      color: var(--text-dim);
+      font-style: italic;
+    }
+  }
+
+  &__info {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-elevated);
+  }
+
+  &__info-heading {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+  }
+
+  &__info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+
+  &__info-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+  }
+}

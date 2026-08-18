@@ -1,0 +1,135 @@
+@import "/src/styles/Portfolio.scss";
+
+.education {
+  padding: var(--section-padding) 0;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-card);
+    transition: border-color 0.3s var(--ease-out-expo);
+
+    &:hover {
+      border-color: var(--border-hover);
+    }
+  }
+
+  &__card-accent {
+    width: 4px;
+    flex-shrink: 0;
+    background: var(--accent);
+  }
+
+  &__card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__card-dates {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    text-transform: uppercase;
+
+    strong {
+      color: var(--accent);
+    }
+  }
+
+  &__card-sep {
+    margin: 0 0.35rem;
+    color: var(--text-dim);
+  }
+
+  &__degree {
+    font-family: var(--font-heading);
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+
+    .text-primary {
+      color: var(--accent);
+    }
+  }
+
+  &__institution {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-top: 0.25rem;
+  }
+
+  &__list-detail {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 0.5rem;
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: 1.15rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55rem;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+  }
+
+  &__tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-muted);
+    background: var(--bg-elevated);
+  }
+}
+
+@media (max-width: 768px) {
+  .education {
+    &__card-body {
+      padding: 1.5rem;
+    }
+  }
+}

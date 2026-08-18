@@ -1,0 +1,184 @@
+@import "/src/styles/Portfolio.scss";
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: var(--section-padding) 0;
+  overflow: hidden;
+
+  &__orb {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.12;
+    filter: blur(120px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: float 8s ease-in-out infinite;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+  }
+
+  &__status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse-dot 2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &__greeting {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 400;
+    color: var(--text-muted);
+  }
+
+  &__name {
+    font-family: var(--font-heading);
+    font-size: clamp(2.75rem, 6vw, 5.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    color: var(--text);
+  }
+
+  &__role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-size: clamp(1.15rem, 2.5vw, 1.6rem);
+    line-height: 1.4;
+  }
+
+  &__role-primary {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  &__role-secondary {
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+
+  &__description {
+    max-width: 560px;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s var(--ease-out-expo);
+    cursor: pointer;
+
+    &--primary {
+      background: var(--accent);
+      color: var(--bg);
+
+      &:hover {
+        background: var(--accent-hover);
+        transform: translateY(-2px);
+      }
+    }
+
+    &--secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+
+      &:hover {
+        border-color: var(--border-hover);
+        background: var(--bg-elevated);
+      }
+    }
+  }
+
+  &__btn-arrow {
+    transition: transform 0.3s var(--ease-out-expo);
+  }
+
+  &__btn:hover &__btn-arrow {
+    transform: translateX(3px);
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-top: 1rem;
+  }
+
+  &__meta-sep {
+    color: var(--text-dim);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+
+    &__orb {
+      width: 300px;
+      height: 300px;
+    }
+
+    &__name {
+      font-size: clamp(2.25rem, 8vw, 3.5rem);
+    }
+
+    &__actions {
+      flex-direction: column;
+    }
+
+    &__btn {
+      justify-content: center;
+    }
+  }
+}

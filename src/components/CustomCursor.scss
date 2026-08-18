@@ -1,0 +1,37 @@
+@import "/src/styles/Portfolio.scss";
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s var(--ease-out-expo),
+              height 0.25s var(--ease-out-expo),
+              background 0.25s,
+              opacity 0.25s;
+  opacity: 0;
+  mix-blend-mode: difference;
+
+  &--visible {
+    opacity: 1;
+  }
+
+  &--expand {
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 255, 135, 0.15);
+    border: 1px solid var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .custom-cursor {
+    display: none !important;
+  }
+}

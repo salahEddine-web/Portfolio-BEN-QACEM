@@ -1,0 +1,81 @@
+@import "/src/styles/Portfolio.scss";
+
+.skills {
+  padding: var(--section-padding) 0;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  &__category {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-card);
+    transition: border-color 0.3s var(--ease-out-expo);
+
+    &:hover {
+      border-color: var(--border-hover);
+    }
+  }
+
+  &__category-title {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: var(--bg-elevated);
+    transition: border-color 0.2s, color 0.2s;
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  }
+
+  &__icon {
+    font-size: 0.9rem;
+    width: 1rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

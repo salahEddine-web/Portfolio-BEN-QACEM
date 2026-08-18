@@ -1,0 +1,33 @@
+@import "/src/styles/Portfolio.scss";
+
+.learning {
+  padding: var(--section-padding) 0;
+  background: var(--bg);
+
+  &__strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+  }
+
+  &__tag {
+    display: inline-block;
+    padding: 0.65rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    transition: border-color 0.3s, color 0.3s, transform 0.3s;
+    animation: float 4s ease-in-out infinite;
+    animation-play-state: running;
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-3px);
+    }
+  }
+}
